@@ -1,0 +1,412 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.disabled {
+  cursor: no-drop;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 10px;
+  font-family: 'Arial';
+  margin-bottom: 100px;
+}
+
+body .wrapper {
+  width: 1000px;
+  min-height: 100px;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .wrapper .header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .wrapper .header .logo-link {
+  display: block;
+}
+
+body .wrapper .header .logo-link img {
+  height: 75px;
+}
+
+body .wrapper .header .phone-numbers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 10px;
+  font-size: 2.2em;
+  line-height: .9;
+}
+
+body .wrapper .header .phone-numbers a {
+  text-decoration: none;
+  color: #ED622F;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 500;
+}
+
+body .wrapper .menu {
+  width: 100%;
+  height: 50px;
+  margin-top: 30px;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .wrapper .menu a {
+  text-decoration: none;
+  font-size: 1.4em;
+  color: #fff;
+  border-right: 1px solid #ED622F;
+}
+
+body .wrapper .menu a:nth-last-child(1) {
+  border-right: none;
+}
+
+body .wrapper .menu a:hover {
+  background: #ED622F;
+  color: #000;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+body .wrapper .menu a .link {
+  margin: 0 35px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .wrapper .menu .active {
+  background: #ED622F;
+}
+
+body .wrapper .navigation {
+  margin-top: 15px;
+  margin-left: 20px;
+  font-size: 1.2em;
+}
+
+body .wrapper .navigation a {
+  color: #000;
+}
+
+body .wrapper .navigation a:hover {
+  color: #ED622F;
+}
+
+body .wrapper .calc {
+  width: 650px;
+  height: 380px;
+  margin-top: 20px;
+  margin-left: 20px;
+  background: #F2F2F2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .wrapper .calc h1 {
+  margin-top: 20px;
+  margin-left: 100px;
+  font-size: 3em;
+  font-weight: 400;
+  color: #ED622F;
+}
+
+body .wrapper .calc .calc-form {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+body .wrapper .calc .calc-form .result {
+  margin: 20px 0 40px 20px;
+}
+
+body .wrapper .calc .calc-form .result input {
+  width: 100px;
+  height: 35px;
+  cursor: pointer;
+  border: 1px solid #C3C4C4;
+  border-radius: 7px;
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.19);
+          box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.19);
+  background: #80C800;
+  background: -webkit-gradient(linear, left bottom, left top, from(#80c800), to(#bef435));
+  background: linear-gradient(0deg, #80c800 0%, #bef435 100%);
+  color: #456505;
+  font-weight: 600;
+  font-family: 'Arial';
+  font-size: 1.2em;
+}
+
+body .wrapper .calc .calc-form .result input:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#80c800), to(#bef435));
+  background: linear-gradient(180deg, #80c800 0%, #bef435 100%);
+}
+
+body .wrapper .calc .calc-form .result span {
+  color: #456505;
+  font-weight: 600;
+  font-family: 'Arial';
+  font-size: 1.2em;
+  margin-left: 20px;
+}
+
+body .wrapper .calc .calc-form .result span strong {
+  color: #000;
+  font-weight: 400;
+  font-size: 1.1em;
+}
+
+body .wrapper .calc .calc-form table {
+  min-height: 100px;
+  border-spacing: 20px 15px;
+}
+
+body .wrapper .calc .calc-form table tr {
+  padding: 20px;
+}
+
+body .wrapper .calc .calc-form table tr td {
+  font-size: 1.3em;
+}
+
+body .wrapper .calc .calc-form table tr td .valid-date {
+  color: #EB4C42;
+}
+
+body .wrapper .calc .calc-form table tr td:nth-child(3) span {
+  position: relative;
+  top: 10px;
+  left: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 5px;
+  font-style: italic;
+  font-family: 'Verdana';
+  color: #717171;
+  font-size: .9em;
+}
+
+body .wrapper .calc .calc-form table tr td input[type=range] {
+  left: -20px;
+  position: relative;
+  top: 10px;
+  width: 250px;
+  height: 10px;
+  -webkit-appearance: none;
+  border-radius: 100px;
+  border: 0;
+  padding: 0 3px;
+}
+
+body .wrapper .calc .calc-form table tr td input[type=range]:focus {
+  outline: none;
+  border: 0;
+}
+
+body .wrapper .calc .calc-form table tr td input[type=range]::-ms-track {
+  width: 250px;
+  height: 10px;
+  cursor: pointer;
+}
+
+body .wrapper .calc .calc-form table tr td input[type=range]::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  background: #dadada;
+  background: linear-gradient(0deg, #dadada 0%, white 100%);
+  border: 0;
+  cursor: pointer;
+}
+
+body .wrapper .calc .calc-form table tr td input[type=range]::-webkit-slider-thumb {
+  border-radius: 50%;
+  -webkit-appearance: none;
+  width: 10px;
+  height: 10px;
+  background: #dadada;
+  background: -webkit-gradient(linear, left bottom, left top, from(#dadada), to(white));
+  background: linear-gradient(0deg, #dadada 0%, white 100%);
+  border: 0;
+  cursor: pointer;
+  margin-top: -1px;
+  -webkit-box-shadow: -100vw 0 5px 100vw #84AA31;
+          box-shadow: -100vw 0 5px 100vw #84AA31;
+}
+
+body .wrapper .calc .calc-form table tr td input[type=range]::-ms-thumb {
+  width: 10px;
+  height: 10px;
+  background: #dadada;
+  background: linear-gradient(0deg, #dadada 0%, white 100%);
+  border: 0;
+  cursor: pointer;
+}
+
+body .wrapper .calc .calc-form table tr td input[type=range]::-moz-range-track {
+  width: 250px;
+  height: 10px;
+  border-radius: 100px;
+  background: #000;
+  border: 1px solid #fff;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+body .wrapper .calc .calc-form table tr td input[type=range]::-webkit-slider-runnable-track {
+  overflow: hidden;
+  -moz-appearance: none;
+  width: 250px;
+  height: 10px;
+  border-radius: 100px;
+  background: #000;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+body .wrapper .calc .calc-form table tr td input[type=range]::-ms-fill-lower {
+  background: #84AA31;
+}
+
+body .wrapper .calc .calc-form table tr td input[type=range]::-moz-range-progress {
+  background: #84AA31;
+}
+
+body .wrapper .calc .calc-form table tr td .invalid {
+  border-color: #EB4C42;
+}
+
+body .wrapper .calc .calc-form table tr td input, body .wrapper .calc .calc-form table tr td select {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100px;
+  height: 30px;
+  padding: 5px 10px;
+  border-radius: 0;
+  border: 1px solid #D6D7D8;
+  border-bottom-width: 3px;
+  -moz-appearance: textfield;
+}
+
+body .wrapper .calc .calc-form table tr td input:focus, body .wrapper .calc .calc-form table tr td select:focus {
+  border-color: #000;
+}
+
+body .wrapper .calc .calc-form table tr td input::-webkit-outer-spin-button, body .wrapper .calc .calc-form table tr td input::-webkit-inner-spin-button, body .wrapper .calc .calc-form table tr td select::-webkit-outer-spin-button, body .wrapper .calc .calc-form table tr td select::-webkit-inner-spin-button {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body .wrapper .calc .calc-form table tr td label {
+  margin: 0 10px;
+}
+
+body .wrapper .calc .calc-form table tr td label input {
+  width: auto;
+  height: auto;
+  margin-right: 5px;
+}
+
+body .wrapper .calc .calc-form table tr td:nth-child(1) {
+  text-align: right;
+}
+
+body .footer {
+  width: 1000px;
+  height: 50px;
+  position: fixed;
+  bottom: 0;
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-left: 50px;
+  padding-top: 10px;
+}
+
+body .footer a {
+  margin: 0 15px;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+body .footer a:hover {
+  color: #ED622F;
+}
+/*# sourceMappingURL=style.css.map */
